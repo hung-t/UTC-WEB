@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-color: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.my-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-btn:hover {
+    background-color: #222;
+}
+
+.my-link {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.my-link:hover {
+    color: #444;
+}

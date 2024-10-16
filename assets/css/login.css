@@ -1,0 +1,88 @@
+.login {
+    height: inherit;
+}
+
+.form-left-side {
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.form-img {
+    width: 100%;
+    margin: auto;
+}
+
+.form-right-side {
+    padding: 0 40px;
+    color: var(--primary-color);
+    margin: auto 0;
+}
+
+.form-right-side h2 {
+    font-size: 4.2rem;
+    margin-bottom: 16px;
+}
+
+.form-right-side p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+}
+
+.form-right-side span {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+input[type = text] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    padding: 0 12px;
+    margin: 4px 0 16px 0;
+    font-size: 1.4rem;
+}
+
+.form-remember,
+.form-terms {
+    --side-width: 18px;
+    display: flex;
+    align-items: center;
+}
+
+input[type = checkbox] {
+    display: inline-block;
+    width: var(--side-width);
+    height: var(--side-width);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    accent-color: var(--primary-color);
+}
+
+.form-remember span,
+.form-terms span {
+    display: inline-block;
+    height: var(--side-width);
+    line-height: var(--side-width);
+    margin-left: 8px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    float: right;
+}
+
+.forgot-password a:hover {
+    opacity: 0.8;
+}
+
+.form-btn {
+    margin-top: 16px;
+    width: 100%;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHONE SHOP</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+
+    <!-- js -->
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            load('header', '../html/header.html');
+        });
+    </script>
+
+    <!-- main -->
+    <main>
+        <aside class="way container">
+            <a href="#" class="way__link">Shop</a>
+            <span class="way__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                        
+            </span>
+            <a href="#" class="way__link">All Product</a>
+        </aside>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <nav class="category col-3 g-5">
+                        <ul class="category__list">
+                            <li class="category__item category__item--title">
+                                Product Categories 
+                                <span class="category__item--icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-close">
+                                        <path d="M8 14L12 10L16 14" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-open">
+                                        <path d="M16 10L12 14L8 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </span>
+                            </li>
+                            <li class="category__item">
+                                <span class="category__item--checkbox">
+                                    <input type="checkbox" name="input-check"  class="input-check">
+                                    <label class="category__item--checkbox-fake"></label>
+                                    <label class="category__item--checkbox-label">
+                                        Iphone
+                                    </label>
+                                </span>
+                            </li>
+                            <li class="category__item">
+                                <span class="category__item--checkbox">
+                                    <input type="checkbox" name="input-check" class="input-check">
+                                    <label class="category__item--checkbox-fake"></label>
+                                    <label class="category__item--checkbox-label">
+                                        Samsung
+                                    </label>
+                                </span>
+                            </li>
+                            <li class="category__item">
+                                <span class="category__item--checkbox">
+                                    <input type="checkbox" name="input-check" class="input-check">
+                                    <label class="category__item--checkbox-fake"></label>
+                                    <label class="category__item--checkbox-label">
+                                        Oppo
+                                    </label>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="category__list">
+                            <li class="category__item category__item--title">
+                                Filter by Price
+                                <span class="category__item--icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-close">
+                                        <path d="M8 14L12 10L16 14" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-open">
+                                        <path d="M16 10L12 14L8 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </span>
+                            </li>
+                            <li class="category__item category__item-ranger-input">
+                                <span>Price: 
+                                    $<span class="min-price">0</span> - 
+                                    $<span class="max-price">5000</span>
+                                </span>
+                                <div class="range-input-progress"></div>
+                                <input class="range-input range-min" max="5000" type="range" value="0">
+                                
+                                <input class="range-input range-max" max="5000" type="range" value="5000">
+                            </li>
+                        </ul>
+                        <ul class="category__list">
+                            <li class="category__item category__item--title">
+                                Filter by Color
+                                <span class="category__item--icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-close">
+                                        <path d="M8 14L12 10L16 14" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-open">
+                                        <path d="M16 10L12 14L8 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </span>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Ultramarine</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Teal</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Pink</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Desert Titanium</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Black Titanium</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">Natural Titanium</p>
+                            </li>
+                            <li class="category__item category__item--color-wrap">
+                                <span class="category__item--color"></span>
+                                <p class="category__item--color-name">White Titanium</p>
+                            </li>
+                        </ul>
+                
+                    </nav>
+                    <section class="main__item col-9 g-5">
+                        <div class="row">
+                            <aside class="col-12 main__item--filter">
+                                <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15C14 15.5523 14.4477 16 15 16C15.5523 16 16 15.5523 16 15C16 14.4477 15.5523 14 15 14C14.4477 14 14 14.4477 14 15Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 15C8 15.5523 8.44772 16 9 16C9.55228 16 10 15.5523 10 15C10 14.4477 9.55228 14 9 14C8.44772 14 8 14.4477 8 15Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 9C14 9.55228 14.4477 10 15 10C15.5523 10 16 9.55228 16 9C16 8.44772 15.5523 8 15 8C14.4477 8 14 8.44772 14 9Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 9C8 9.55228 8.44772 10 9 10C9.55228 10 10 9.55228 10 9C10 8.44772 9.55228 8 9 8C8.44772 8 8 8.44772 8 9Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 18H21M3 18H6M6 18V20M6 18V16M20 12H21M3 12H16M16 12V14M16 12V10M14 6H21M3 6H10M10 6V8M10 6V4" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="main__item--filter-text">
+                                    Showing
+                                    <span class="main__item--filter-text-num1">1</span>-<span class="main__item--filter-text-num2">16</span>
+                                    of <span class="main__item--filter-text-numAll">72</span> results
+                                </span>
+                                <span class="main__item--filter--shot">
+                                    Shot by latest 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-close">
+                                        <path d="M8 14L12 10L16 14" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="category__item--icon-open">
+                                        <path d="M16 10L12 14L8 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>   
+                                </span>
+                            </aside>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/iphone-15-pro-max_3.webp" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">iPhone 15 Pro Max</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/iphone-16-pro-titan-sa-mac.png" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">iPhone 16 Pro</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/huawei.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">Smartphone Huawei Mate XT</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/iphone-16-blue-600x600.png" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">iPhone 16 Plus</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">iPhone 16 Pro Max</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/samsung-galaxy-s23-ultra-green-thumbnew-600x600.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">Samsung Galaxy S23 Ultra 5G</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/samsung-galaxy-z-fold5.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+    
+                                              
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">Samsung Galaxy Z Fold5 5G</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 g-4">
+                                <a href="#" class="product">
+                                    <figure>
+                                        <img src="../assets/img/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" alt="item" class="product-img">
+                                        <div class="product-blur">
+                                            <div class="product-icon product-icon-1">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="product-icon product-icon-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                          </div>
+                                            <div class="btn product-btn">Add to Cart</div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-info">
+                                        <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
+                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                        <div class="product-price">
+                                            <p class="product-price-real">$999</p>
+                                            <p class="product-price-fake">$9999</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <aside class="col-12 main__item--changePage">
+                                <a href="#!">
+                                    <svg class="main__item--changePage-icon main__item--changePage-icon-disable" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 12H5M5 12L11 18M5 12L11 6" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#!" class="btn-min main__item--changePage-btn">1</a>    
+                                <a href="#!" class="btn-min main__item--changePage-btn">2</a>    
+                                <a href="#!" class="btn-min main__item--changePage-btn">3</a>    
+                                <a href="#!" class="btn-min main__item--changePage-btn">4</a>    
+                                <a href="#!" class="btn-min main__item--changePage-btn">5</a> 
+                                <a href="#!" href="#!">
+                                    <svg class="main__item--changePage-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                       
+                                </a>
+                            </aside>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer id="footer">
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            load('footer', '../html/footer.html');
+        });
+    </script>
+
+    <script src="../js/product.js"></script>
+</body>
+</html>

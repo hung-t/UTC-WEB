@@ -1,0 +1,202 @@
+
+.way {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.way__icon {
+    transform: translateY(10%);
+}
+
+/* main product */
+.category {
+    padding-left: 5px;
+}
+
+.category__list {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+}
+.category__list:first-child {
+    margin-top: unset;
+}
+.category__list:last-child {
+    border: none;
+}
+.category__item,
+.category__item--checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category__item {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 10px 0 14px;
+}
+.category__item--title {    
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+    cursor: pointer;
+}
+.category__item--icon {
+    width: 30px;
+    height: 30px;
+}
+.category__item--icon-open {
+    display: none;
+}
+.category__item--checkbox {
+    width: 100%;
+}
+.category__item--checkbox-label {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-left: 20px;
+}
+.input-check {
+    display: none;
+}
+.input-check:checked + .category__item--checkbox-fake {
+    background-color: #000;
+}
+.input-check:checked + .category__item--checkbox-fake::before {
+    display: block;
+}
+
+.category__item--checkbox-fake {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    border: 3px solid #000;
+    border-radius: 5px ;
+}
+.category__item--checkbox-fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 4px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #ffffff;
+    transform: translate(-48%, -70%) rotate(-45deg);
+    display: none;
+}
+
+
+.category__item-ranger-input {
+    margin-bottom: 40px;
+}
+.range-input {
+    -webkit-appearance: none;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    left: -2px;
+    margin-top: 60px;
+}
+.range-input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px #000;
+    pointer-events: auto;
+}
+.range-input-progress {
+    position: absolute;
+    left: -2px;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 60px;
+    background-color: #000;
+}
+
+.category__item--color-wrap {
+    display: flex;
+    justify-content: unset;
+}
+
+.category__item--color {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.category__item--color-wrap:nth-child(2) .category__item--color {
+    background-color: #3C4FB7;
+}
+.category__item--color-wrap:nth-child(3) .category__item--color {
+    background-color: #008080;
+}
+.category__item--color-wrap:nth-child(4) .category__item--color {
+    background-color: #FF69B4;
+}
+.category__item--color-wrap:nth-child(5) .category__item--color {
+    background-color: #D2B48C;
+}
+.category__item--color-wrap:nth-child(6) .category__item--color {
+    background-color: #1C1C1C;
+}
+.category__item--color-wrap:nth-child(7) .category__item--color {
+    background-color: #C0C0C0;
+}
+.category__item--color-wrap:nth-child(8) .category__item--color {
+    background-color: #F5F5F5;
+}
+
+.main__item--filter {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.main__item--filter--shot {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.main__item--filter-text {
+    margin-left: 10px;
+}
+
+.main__item--changePage {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 40px;
+}
+.main__item--changePage-btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    margin: 0 6px;
+    border: 2px solid #000;
+    box-shadow: unset;
+}
+.main__item--changePage-icon {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+}
+.main__item--changePage-icon-disable {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

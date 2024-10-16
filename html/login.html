@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/register-login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="container-fluid login">
+        <div class="row">
+            <div class="form-left-side col-7">
+                <img class="form-img" src="../assets/img/login__img.jpg" alt="">
+            </div>
+            <form method="GET" class="form-right-side col-5" action="../html/index.html">
+                <h2>Welcome</h2>
+                <p>Login here or if you <a class="my-link" href="register.html">don't have an account</a></p>
+
+                <div class="form-email">
+                    <span>Email address:</span>
+                    <input required placeholder="Nhập email" type="text">
+                </div>
+
+                <div class="form-password">
+                    <span>Password:</span>
+                    <input required placeholder="Nhập mật khẩu" type="text">
+                </div>
+                <div class="row">
+                    <div class="form-remember col-6">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </div>
+                    <div class="forgot-password col-6">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <button href="../html/index.html" class="my-btn form-btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
