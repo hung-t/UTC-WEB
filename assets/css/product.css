@@ -1,15 +1,5 @@
 
-.way {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.way__icon {
-    transform: translateY(10%);
-}
+
 
 /* main product */
 .category {

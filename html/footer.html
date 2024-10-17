@@ -4,130 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/common.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list">
-                <p class="footer__item">  
-                    <a href="#!" class="footer__link">
-                        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    (84)9999999
-                </p>
-                <p class="footer__item"> 
-                    <a href="#!" class="footer__link">
-                        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    KhanhPhuMy@gmail.com
-                </p>
-                <p class="footer__item"> 
-                    <a href="#!" class="footer__link">
-                        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 9.92285C5 14.7747 9.24448 18.7869 11.1232 20.3252C11.3921 20.5454 11.5281 20.6568 11.7287 20.7132C11.8849 20.7572 12.1148 20.7572 12.271 20.7132C12.472 20.6567 12.6071 20.5463 12.877 20.3254C14.7557 18.7871 18.9999 14.7751 18.9999 9.9233C18.9999 8.08718 18.2625 6.32605 16.9497 5.02772C15.637 3.72939 13.8566 3 12.0001 3C10.1436 3 8.36301 3.7295 7.05025 5.02783C5.7375 6.32616 5 8.08674 5 9.92285Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>   
-                    </a>  
-                    Phú Mỹ, Nam Từ Liêm, Hà Nội, Việt Nam
-                </p>
+        <div class="row footer-support">
+            <div class="col-3">
+                <svg class="footer-support-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 11H4.04548M4.04548 11H19.9545M4.04548 11C4.05661 10.9485 4.06977 10.8975 4.08496 10.8471C4.12122 10.7268 4.17242 10.6111 4.27539 10.3795L5.82165 6.90039C6.12737 6.21253 6.28048 5.8684 6.5221 5.61621C6.73568 5.39329 6.99764 5.223 7.28809 5.11837C7.61667 5 7.99336 5 8.74609 5H15.2536C16.0063 5 16.3833 5 16.7119 5.11837C17.0024 5.223 17.264 5.39329 17.4775 5.61621C17.719 5.86823 17.8718 6.21208 18.1771 6.899L19.7296 10.3921C19.8289 10.6154 19.8794 10.729 19.915 10.8471C19.9301 10.8975 19.9433 10.9485 19.9545 11M4.04548 11C4.03302 11.0576 4.0231 11.1158 4.01572 11.1743C4 11.299 4 11.4257 4 11.6792V17M19.9545 11H21M19.9545 11C19.967 11.0576 19.977 11.1158 19.9844 11.1743C20 11.2982 20 11.4242 20 11.6746V17.0001M20 17.0001L16 17.0001M20 17.0001V17.9999C20 19.1045 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V17.0001M16 17.0001L8 17M8 17H4M8 17V18C8 19.1046 7.10457 20 6 20C4.89543 20 4 19.1046 4 18V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="support--title">Free Shipping</p>
+                <p class="support--des">Free shipping for order above $150</p>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list footer__list-center">
-                <h4 class="footer__title">Information</h4>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        My Account
-                    </a>
-                </p>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        Login
-                    </a>
-                </p>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        My Cart
-                    </a>
-                </p>
-    
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        My Wishlist
-                    </a>
-                </p>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        Checkout
-                    </a>
-                </p>
+            <div class="col-3">
+                <svg class="footer-support-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.1521 4.08723C12.1513 3.71959 12.1001 3.3538 12 3C16.9683 3.00545 20.9944 7.03979 21 12C21.0161 16.9625 16.9705 20.9835 12 20.9997C7.02946 21.0158 3.01615 16.963 3 12.0005C4.11168 12.2363 5.27038 11.9981 6.1499 11.2795C7.0562 10.5452 7.5789 9.43935 7.5702 8.27407C7.56959 8.01195 7.5461 7.75072 7.5 7.49268C8.51784 7.89624 9.67043 7.76409 10.5708 7.14162C11.5696 6.44537 12.161 5.3034 12.1521 4.08723Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.00195 7.002V7H3V7.00195L3.00195 7.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.00195 3.002V3H8V3.00195L8.00195 3.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.00195 3.002V3H4V3.00195L4.00195 3.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.002 17.002V17H10V17.002L10.002 17.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.002 15.002V15H15V15.002L15.002 15.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.002 12.002V12H11V12.002L11.002 12.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.002 10.002V10H16V10.002L16.002 10.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.00195 7.002V7H3V7.00195L3.00195 7.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.00195 3.002V3H8V3.00195L8.00195 3.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.00195 3.002V3H4V3.00195L4.00195 3.002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                <p class="support--title">Money Guarantee</p>
+                <p class="support--des">Within 30 days for an exchange</p>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list footer__list-center">
-                <h4 class="footer__title">Service</h4>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        About Us
-                    </a>
-                </p>
-                <p class="footer__item"> 
-                    <a href="#!" class="footer__link">
-                        Careers
-                    </a>
-                </p>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        Delivery Services
-                    </a>
-                </p>
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        Privacy Policy
-                    </a>
-                </p>
-    
-                <p class="footer__item">
-                    <a href="#!" class="footer__link">
-                        Team Memberships
-                    </a>
-                </p>
+            <div class="col-3">
+                <svg class="footer-support-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 11C19 7.13401 15.866 4 12 4C8.13401 4 5 7.13401 5 11M16 14.5V16.5C16 16.9647 16 17.197 16.0384 17.3902C16.1962 18.1836 16.8165 18.8041 17.6099 18.9619C17.8031 19.0003 18.0353 19.0003 18.5 19.0003C18.9647 19.0003 19.197 19.0003 19.3902 18.9619C20.1836 18.8041 20.8036 18.1836 20.9614 17.3902C20.9999 17.197 21 16.9647 21 16.5V14.5C21 14.0353 20.9999 13.8026 20.9614 13.6094C20.8036 12.816 20.1836 12.1962 19.3902 12.0384C19.197 12 18.9647 12 18.5 12C18.0353 12 17.8031 12 17.6099 12.0384C16.8165 12.1962 16.1962 12.816 16.0384 13.6094C16 13.8026 16 14.0353 16 14.5ZM8 14.5V16.5C8 16.9647 7.99986 17.197 7.96143 17.3902C7.80361 18.1836 7.18352 18.8041 6.39014 18.9619C6.19694 19.0003 5.96469 19.0003 5.50004 19.0003C5.03539 19.0003 4.80306 19.0003 4.60986 18.9619C3.81648 18.8041 3.19624 18.1836 3.03843 17.3902C3 17.197 3 16.9647 3 16.5V14.5C3 14.0353 3 13.8026 3.03843 13.6094C3.19624 12.816 3.81648 12.1962 4.60986 12.0384C4.80306 12 5.03539 12 5.50004 12C5.9647 12 6.19694 12 6.39014 12.0384C7.18352 12.1962 7.80361 12.816 7.96143 13.6094C7.99986 13.8026 8 14.0353 8 14.5Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                <p class="support--title">Online Support</p>
+                <p class="support--des">24 hours a day, 7 days a week</p>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list">
-                <h4 class="footer__title">Subscribe</h4>
-                <p class="footer__item">
-                    Enter your email below to the first to know about new collections and product launches   
-                </p>
-                <form action="#" class="footer__form">
-                    <input class="footer__input" type="email" placeholder="Your Email Address" required>
-                    <svg class="footer__icon footer__icon-email" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <button type="submit" class="footer-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </form>
+            <div class="col-3">
+                <svg class="footer-support-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 11V15.8002C3 16.9203 3 17.4801 3.21799 17.9079C3.40973 18.2842 3.71547 18.5905 4.0918 18.7822C4.5192 19 5.07899 19 6.19691 19H17.8031C18.921 19 19.48 19 19.9074 18.7822C20.2837 18.5905 20.5905 18.2842 20.7822 17.9079C21 17.4805 21 16.9215 21 15.8036V11M3 11V9M3 11H21M3 9V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V9M3 9H21M7 15H11M21 11V9" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                <p class="support--title">Flexible Payment</p>
+                <p class="support--des">Pay with multiple credit cards</p>
             </div>
-        </div>
-        <div class="row footer__copyright">
-            <figure class="footer__copyright-img-wrap">
-                <img src="../assets/img/visa.png" alt="" class="footer__copyright-img">
-                <img src="../assets//img/mastercard.png" alt="" class="footer__copyright-img">
-                <img src="../assets/img/Google_Pay_Logo.svg.png" alt="" class="footer__copyright-img">
-                <img src="../assets/img/paypal.webp" alt="" class="footer__copyright-img">
-            </figure>
-            <p class="footer__copyright-title">©2024 Ban quyen khong thuoc ve tao</p>
-            <figure class="footer__media">
-                <img src="../assets/img/fb.png" alt="" class="footer__media-img">
-                <img src="../assets/img/inta.png" alt="" class="footer__media-img">
-                <img src="../assets/img/in.png" alt="" class="footer__media-img">
-            </figure>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list">
+                    <p class="footer__item">  
+                        <a href="#!" class="footer__link">
+                            <svg class="footer-support-icon"iewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        (84)9999999
+                    </p>
+                    <p class="footer__item"> 
+                        <a href="#!" class="footer__link">
+                            <svg class="footer-support-icon"iewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        KhanhPhuMy@gmail.com
+                    </p>
+                    <p class="footer__item"> 
+                        <a href="#!" class="footer__link">
+                            <svg class="footer-support-icon"iewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 9.92285C5 14.7747 9.24448 18.7869 11.1232 20.3252C11.3921 20.5454 11.5281 20.6568 11.7287 20.7132C11.8849 20.7572 12.1148 20.7572 12.271 20.7132C12.472 20.6567 12.6071 20.5463 12.877 20.3254C14.7557 18.7871 18.9999 14.7751 18.9999 9.9233C18.9999 8.08718 18.2625 6.32605 16.9497 5.02772C15.637 3.72939 13.8566 3 12.0001 3C10.1436 3 8.36301 3.7295 7.05025 5.02783C5.7375 6.32616 5 8.08674 5 9.92285Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </a>  
+                        Phú Mỹ, Nam Từ Liêm, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list footer__list-center">
+                    <h4 class="footer__title">Information</h4>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            My Account
+                        </a>
+                    </p>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            Login
+                        </a>
+                    </p>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            My Cart
+                        </a>
+                    </p>
+        
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            My Wishlist
+                        </a>
+                    </p>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            Checkout
+                        </a>
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list footer__list-center">
+                    <h4 class="footer__title">Service</h4>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            About Us
+                        </a>
+                    </p>
+                    <p class="footer__item"> 
+                        <a href="#!" class="footer__link">
+                            Careers
+                        </a>
+                    </p>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            Delivery Services
+                        </a>
+                    </p>
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            Privacy Policy
+                        </a>
+                    </p>
+        
+                    <p class="footer__item">
+                        <a href="#!" class="footer__link">
+                            Team Memberships
+                        </a>
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__list">
+                    <h4 class="footer__title">Subscribe</h4>
+                    <p class="footer__item">
+                        Enter your email below to the first to know about new collections and product launches   
+                    </p>
+                    <form action="#" class="footer__form">
+                        <input class="footer__input" type="email" placeholder="Your Email Address" required>
+                        <svg class="footer__icon footer__icon-email" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <button type="submit" class="footer-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="row footer__copyright">
+                <figure class="footer__copyright-img-wrap">
+                    <img src="../assets/img/visa.png" alt="" class="footer__copyright-img">
+                    <img src="../assets//img/mastercard.png" alt="" class="footer__copyright-img">
+                    <img src="../assets/img/Google_Pay_Logo.svg.png" alt="" class="footer__copyright-img">
+                    <img src="../assets/img/paypal.webp" alt="" class="footer__copyright-img">
+                </figure>
+                <p class="footer__copyright-title">©2024 Ban quyen khong thuoc ve tao</p>
+                <figure class="footer__media">
+                    <img src="../assets/img/fb.png" alt="" class="footer__media-img">
+                    <img src="../assets/img/inta.png" alt="" class="footer__media-img">
+                    <img src="../assets/img/in.png" alt="" class="footer__media-img">
+                </figure>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
