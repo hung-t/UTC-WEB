@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EZWOL</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
@@ -12,6 +19,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/detail.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
     <!-- js -->
     <script src="../js/common.js"></script>
@@ -45,7 +53,7 @@
         </aside>
         <section class="container detail__wrap">
             <div class="row">
-                <div class="detail__img-wrap col-6 g-5">
+                <div class="detail__img-wrap col-md-6 col-12 g-5">
                     <figure class="detail__img--big-wrap">
                         <img src="../assets/img/iphone-16-pro-titan-sa-mac-transperent.png" alt="" class="detail__img--big">
                     </figure>
@@ -56,7 +64,7 @@
                         <img src="../assets/img/iphone-16-pro-titan-sa-mac-transperent.png" alt="" class="detail__img--min">
                     </figure>
                 </div>
-                <div class="detail__info-wrap col-6 g-5">
+                <div class="detail__info-wrap col-md-6 col-12 g-5">
                     <h3 class="detail__info--name">Iphone 16 Pro Max</h3>
                     <p class="detail__info--topic">Iphone 16 Pro Max màu tự nhiên Thumb</p>
                     <figure class="detail__info--Evaluate">
@@ -111,9 +119,9 @@
             </div>
             <section class="detail__product--title-block">
                 <section class="detail__product--title-wrap">
-                    <h5 class="detail__product--title detail__product--title-active">Descriptions</h5>
+                    <h5 class="detail__product--title">Descriptions</h5>
                     <h5 class="detail__product--title">Additional Information</h5>
-                    <h5 class="detail__product--title">Reviews</h5>
+                    <h5 class="detail__product--title detail__product--title-active">Reviews</h5>
                 </section>
                 <!-- des -->
                 <p class="detail__product--content-des">
@@ -244,8 +252,8 @@
             <div class="detail__product--related">
                 <div class="heading">Related Products</div>
                 <div class="row">
-                    <div class="col-3 g-4">
-                        <a href="#" class="product">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 g-4">
+                        <div class="product">
                             <figure>
                                 <img src="../assets/img/iphone-15-pro-max_3.webp" alt="item" class="product-img">
                                 <div class="product-blur">
@@ -265,22 +273,24 @@
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 6L12 3M12 3L15 6M12 3V13M7.00023 10C6.06835 10 5.60241 10 5.23486 10.1522C4.74481 10.3552 4.35523 10.7448 4.15224 11.2349C4 11.6024 4 12.0681 4 13V17.8C4 18.9201 4 19.4798 4.21799 19.9076C4.40973 20.2839 4.71547 20.5905 5.0918 20.7822C5.5192 21 6.07899 21 7.19691 21H16.8036C17.9215 21 18.4805 21 18.9079 20.7822C19.2842 20.5905 19.5905 20.2839 19.7822 19.9076C20 19.4802 20 18.921 20 17.8031V13C20 12.0681 19.9999 11.6024 19.8477 11.2349C19.6447 10.7448 19.2554 10.3552 18.7654 10.1522C18.3978 10 17.9319 10 17 10" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                  </div>
+                                    </div>
                                     <div class="btn product-btn">Add to Cart</div>
                                 </div>
                             </figure>
-                            <div class="product-info">
-                                <h3 class="product-name">iPhone 15 Pro Max</h3>
-                                <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                <div class="product-price">
-                                    <p class="product-price-real">$999</p>
-                                    <p class="product-price-fake">$9999</p>
+                            <a href="../html/detail.html">
+                                <div class="product-info">
+                                    <h3 class="product-name">iPhone 15 Pro Max</h3>
+                                    <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                    <div class="product-price">
+                                        <p class="product-price-real">$999</p>
+                                        <p class="product-price-fake">$9999</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-3 g-4">
-                        <a href="#" class="product">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 g-4">
+                        <div class="product">
                             <figure>
                                 <img src="../assets/img/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" alt="item" class="product-img">
                                 <div class="product-blur">
@@ -302,18 +312,20 @@
                                     <div class="btn product-btn">Add to Cart</div>
                                 </div>
                             </figure>
-                            <div class="product-info">
-                                <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
-                                <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                <div class="product-price">
-                                    <p class="product-price-real">$999</p>
-                                    <p class="product-price-fake">$9999</p>
+                            <a href="../html/detail.html">
+                                <div class="product-info">
+                                    <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
+                                    <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                    <div class="product-price">
+                                        <p class="product-price-real">$999</p>
+                                        <p class="product-price-fake">$9999</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-3 g-4">
-                        <a href="#" class="product">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 g-4">
+                        <div class="product">
                             <figure>
                                 <img src="../assets/img/iphone-16-pro-titan-sa-mac.png" alt="item" class="product-img">
                                 <div class="product-blur">
@@ -337,18 +349,20 @@
                                     <div class="btn product-btn">Add to Cart</div>
                                 </div>
                             </figure>
-                            <div class="product-info">
-                                <h3 class="product-name">iPhone 16 Pro</h3>
-                                <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                <div class="product-price">
-                                    <p class="product-price-real">$999</p>
-                                    <p class="product-price-fake">$9999</p>
+                            <a href="../html/detail.html">
+                                <div class="product-info">
+                                    <h3 class="product-name">iPhone 16 Pro</h3>
+                                    <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                    <div class="product-price">
+                                        <p class="product-price-real">$999</p>
+                                        <p class="product-price-fake">$9999</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-3 g-4">
-                        <a href="#" class="product">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 g-4">
+                        <div class="product">
                             <figure>
                                 <img src="../assets/img/iphone-16-blue-600x600.png" alt="item" class="product-img">
                                 <div class="product-blur">
@@ -372,15 +386,17 @@
                                     <div class="btn product-btn">Add to Cart</div>
                                 </div>
                             </figure>
-                            <div class="product-info">
-                                <h3 class="product-name">iPhone 16 Plus</h3>
-                                <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                <div class="product-price">
-                                    <p class="product-price-real">$999</p>
-                                    <p class="product-price-fake">$9999</p>
+                            <a href="../html/detail.html">
+                                <div class="product-info">
+                                    <h3 class="product-name">iPhone 16 Plus</h3>
+                                    <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                    <div class="product-price">
+                                        <p class="product-price-real">$999</p>
+                                        <p class="product-price-fake">$9999</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

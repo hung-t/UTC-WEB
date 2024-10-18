@@ -1,10 +1,13 @@
 const optionColor = document.querySelectorAll(".btn-selected-color");
 const optionSize = document.querySelectorAll(".btn-selected-size");
 
+
+const Price = document.querySelector(".detail__info--price-new");
 const minus = document.querySelector(".minus");
 const plus = document.querySelector(".plus");
 const numChoose = document.querySelector(".detail__info--number");
 let num = +numChoose.textContent;
+let newPrice = +Price.textContent.slice(1);
 
 
 const titleDetailProduct = document.querySelectorAll(".detail__product--title");
@@ -31,11 +34,13 @@ minus.addEventListener("click", function() {
     if(num > 1) {
         num--;
         numChoose.textContent = num;
+        Price.textContent = `${newPrice -= 999}$`;
     }
 })
 plus.addEventListener("click", function() {
     num++;
     numChoose.textContent = num;
+    Price.textContent = `${newPrice += 999}$`;
 })
 
 

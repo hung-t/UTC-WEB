@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHONE SHOP</title>
+    <title>EZWOL</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +19,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
     <!-- js -->
     <script src="../js/common.js"></script>
@@ -42,7 +49,7 @@
         <div class="container">
             <section>
                 <div class="row">
-                    <nav class="category col-3 g-5">
+                    <nav class="category col-md-3 col-0 g-5">
                         <ul class="category__list">
                             <li class="category__item category__item--title">
                                 Product Categories 
@@ -149,7 +156,13 @@
                         </ul>
                 
                     </nav>
-                    <section class="main__item col-9 g-5">
+                    <nav class="mobile-category">
+                        <div class="mobile-category-item mobile-category-item-active">Popular</div>
+                        <div class="mobile-category-item">Latest</div>
+                        <div class="mobile-category-item">Best Seller</div>
+                        <div class="mobile-category-item">Price</div>
+                    </nav>
+                    <section class="main__item col-md-9 col-12 g-5">
                         <div class="row">
                             <aside class="col-12 main__item--filter">
                                 <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,8 +189,8 @@
                                     </svg>   
                                 </span>
                             </aside>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/iphone-15-pro-max_3.webp" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -201,18 +214,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">iPhone 15 Pro Max</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">iPhone 15 Pro Max</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -234,18 +249,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/iphone-16-pro-titan-sa-mac.png" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -269,18 +286,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">iPhone 16 Pro</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">iPhone 16 Pro</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/huawei.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -304,18 +323,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">Smartphone Huawei Mate XT</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">Smartphone Huawei Mate XT</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/iphone-16-blue-600x600.png" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -339,18 +360,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">iPhone 16 Plus</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">iPhone 16 Plus</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -374,18 +397,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">iPhone 16 Pro Max</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">iPhone 16 Pro Max</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/samsung-galaxy-s23-ultra-green-thumbnew-600x600.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -409,18 +434,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">Samsung Galaxy S23 Ultra 5G</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">Samsung Galaxy S23 Ultra 5G</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/samsung-galaxy-z-fold5.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -444,18 +471,20 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">Samsung Galaxy Z Fold5 5G</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">Samsung Galaxy Z Fold5 5G</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-4 g-4">
-                                <a href="../html/detail.html" class="product">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 g-4">
+                                <div class="product">
                                     <figure>
                                         <img src="../assets/img/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" alt="item" class="product-img">
                                         <div class="product-blur">
@@ -477,15 +506,17 @@
                                             <div class="btn product-btn">Add to Cart</div>
                                         </div>
                                     </figure>
-                                    <div class="product-info">
-                                        <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
-                                        <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
-                                        <div class="product-price">
-                                            <p class="product-price-real">$999</p>
-                                            <p class="product-price-fake">$9999</p>
+                                    <a href="../html/detail.html">
+                                        <div class="product-info">
+                                            <h3 class="product-name">Samsung Galaxy Z Flip6 5G</h3>
+                                            <p class="product-des">Bảo hành chính hãng điện thoại 1 năm</p>
+                                            <div class="product-price">
+                                                <p class="product-price-real">$999</p>
+                                                <p class="product-price-fake">$9999</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                             <aside class="col-12 main__item--changePage">
                                 <a href="#!">

@@ -68,7 +68,7 @@ function autoNext() {
     }
 }
 
-setInterval("autoNext()", 10000);
+setInterval("autoNext()", 7000);
 
 
 

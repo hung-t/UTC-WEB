@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EZWOL</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
 </head>
 <body>
     <div class="container">
         <nav class="header__nav">
-            <a class="" href="#">BrandName</a>
+            <a class="" href="../html/index.html">
+                <figure class="logo-wrap">
+                    <img src="../assets/img/Logo.png" alt="LOGO" class="logo">
+                    <figcaption class="logo-name">ZWOL</figcaption>
+                </figure>
+            </a>
             <ul class="navbar__list">
                 <li class="navbar__item">
                     <a class="navbar__link" href="../html/index.html">Home</a>
@@ -36,7 +53,7 @@
                             <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="../html/index.html#category__page" class="header__tool--icon" >
+                    <a href="../html/favourite.html" class="header__tool--icon" >
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg> 
@@ -47,8 +64,51 @@
                         </svg>
                     </a>
                 <a href="../html/login.html" class="btn header__btn">Login</a>
-                <a href="../html/register.html" class="btn header__btn">Registed</a>
+                <a href="../html/register.html" class="btn header__btn">Sign Up</a>
+                <!-- mobile-nav -->
+                <label for="header__nav-toggle" class="header__menu-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 17H19M5 12H19M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                  
+                </label>
+                <input type="checkbox" id="header__nav-toggle">
+                <label for="header__nav-toggle" class="header__overlay"></label>
+                <nav class="header__nav--mobile">
+                    <div class="logo header__mobile-logo">
+                        <a class="" href="../html/index.html">
+                            <figure class="logo-wrap">
+                                <img src="../assets/img/Logo.png" alt="LOGO" class="logo">
+                                <figcaption class="logo-name">ZWOL</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="header__nav--mobile-list">
+                        <a href="../html/index.html" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/index.html'">Home</label>
+                        </a>
+                        <a href="../html/product.html" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/product.html'">Shop</label>
+                        </a>
+                        <a href="../html/index.html#customer-cmt__page" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/index.html#customer-cmt__page'">Our Story</label>
+                        </a>
+                        <a href="../html/index.html#media__page" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/index.html#media__page'">Blog</label>
+                        </a> 
+                        <a href="../html/index.html#footer" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/index.html#footer'">Contact Us</label>
+                        </a> 
+                        <a href="../html/login.html" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/login.html'">Login</label>
+                        </a> 
+                        <a href="../html/register.html" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='../html/register.html'">Sign Up</label>
+                        </a> 
+                    </div>
+                </nav>
+                <!-- end Mobile-nav -->
             </div>
+
         </nav>
     </div>
 </body>
