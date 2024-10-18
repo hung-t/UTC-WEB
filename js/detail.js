@@ -3,11 +3,14 @@ const optionSize = document.querySelectorAll(".btn-selected-size");
 
 
 const Price = document.querySelector(".detail__info--price-new");
+const PriceFake = document.querySelector(".detail__info--price-old");
 const minus = document.querySelector(".minus");
 const plus = document.querySelector(".plus");
 const numChoose = document.querySelector(".detail__info--number");
 let num = +numChoose.textContent;
 let newPrice = +Price.textContent.slice(1);
+let oldPrice = +PriceFake.textContent.slice(1);
+
 
 
 const titleDetailProduct = document.querySelectorAll(".detail__product--title");
@@ -35,12 +38,15 @@ minus.addEventListener("click", function() {
         num--;
         numChoose.textContent = num;
         Price.textContent = `${newPrice -= 999}$`;
+        PriceFake.textContent = `${oldPrice -= 1299}$`;
+
     }
 })
 plus.addEventListener("click", function() {
     num++;
     numChoose.textContent = num;
     Price.textContent = `${newPrice += 999}$`;
+    PriceFake.textContent = `${oldPrice += 1299}$`;
 })
 
 
