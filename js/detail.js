@@ -1,3 +1,5 @@
+
+
 const imgMins = document.querySelectorAll(".detail__img--min");
 const imgBig = document.querySelector(".detail__img--big");
 const shiftLeft = document.querySelector(".detail__img--big-icon-left");
@@ -127,3 +129,4 @@ titleDetailProduct.forEach(function(title) {
         }
     });
 })
+

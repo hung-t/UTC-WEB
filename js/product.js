@@ -1,3 +1,4 @@
+
 // Product
 const inputCheck = document.querySelectorAll(".input-check");
 const checkboxFakes = document.querySelectorAll(".category__item--checkbox-fake");
@@ -11,7 +12,6 @@ const inputRangeMin = document.querySelector(".range-min");
 const inputRangeMax = document.querySelector(".range-max");
 const renderMinPrice = document.querySelector(".min-price");
 const renderMaxPrice = document.querySelector(".max-price");
-
 
         //render filter price
 inputRangeMin.oninput = () => {
@@ -55,4 +55,4 @@ titleCategories.forEach((titleCategory, index) => {
         }
     });
 
-})
+});
