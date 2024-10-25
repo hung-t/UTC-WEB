@@ -193,7 +193,9 @@ label {
 .way__icon {
     transform: translateY(10%);
 }
-
+.way__link:hover {
+    color: var(--primary-color);
+}
 
 /* header */
 .logo-wrap {
@@ -595,7 +597,7 @@ footer {
     border: none;
     outline: none;
     border-radius: 50%;
-    padding: 2px;
+    padding: 1.4px 1.1px 1px 1px;
 }
 .footer-btn:hover {
     background-color: #cecece;

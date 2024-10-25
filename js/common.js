@@ -35,7 +35,6 @@ function headerAction() {
     const searchIcon = document.querySelector(".header__search--icon");
     const searchOverlay = document.querySelector(".header__search--overlay");
     const search = document.querySelector(".header__input");
-    console.log(searchOverlay)
     searchIcon.addEventListener("click", () => {
         searchOverlay.style.visibility = "inherit";
         searchOverlay.style.opacity = "1";
@@ -110,13 +109,19 @@ function searchWork() {
         searchWord.forEach(function(word, index) {
             if (inputSearch.value.length !== 0 && word.toLowerCase().startsWith(inputSearch.value.toLowerCase())) {
                 userSearch.style.display = "block";
-                userSearch.innerHTML += `<a href="#!" class="header__search--item">${word}</a>`;
+                userSearch.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
+                trendSearch.style.display = "none";
+                isFound = true;
+            }
+            if(word.toLowerCase().includes(inputSearch.value.toLowerCase())) {
+                userSearch.style.display = "block";
+                userSearch.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
                 trendSearch.style.display = "none";
                 isFound = true;
             }
         });
 
-        if (!isFound) {
+        if (!isFound || inputSearch.value.length === 0 || inputSearch.value === " ") {
             userSearch.style.display = "none"; 
             trendSearch.style.display = "block";
         }
