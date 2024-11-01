@@ -133,20 +133,17 @@
 }
 
 .detail__info--color .btn-min:first-child {
-    background-color: #a6a6a6;
+    background-color: #A0A6B9;
 }
 
 .detail__info--color .btn-min:nth-child(2) {
-    background-color: #d6e5f8;
+    background-color: #141412;
 }
 
 .detail__info--color .btn-min:nth-child(3) {
-    background-color: #d1efe5;
+    background-color: #cfc9c3;
 }
 
-.detail__info--color .btn-min:nth-child(4) {
-    background-color: #ffeca6;
-}
 
 .detail__info--size .btn-min {
     font-size: 1.2rem;

@@ -1,3 +1,5 @@
+
+
 .detail__img--big-wrap {
     position: relative;
     display: flex;
@@ -7,12 +9,10 @@
     padding: 40px 0;
     border-radius: 5px;
 }
-
 .detail__img-wrap {
     padding-left: 0;
     padding-right: 30px;
 }
-
 .detail__img--big {
     width: 70%;
     object-fit: cover;
@@ -27,26 +27,21 @@
     cursor: pointer;
     color: #ccc;
 }
-
 .detail__img--big-icon:hover {
     color: var(--primary-color);
 }
-
 .detail__img--big-icon-left {
     left: 20px;
 }
-
 .detail__img--big-icon-right {
     right: 20px;
 }
-
 .detail__img--type {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
 }
-
 .detail__img--min {
     width: 23%;
     object-fit: cover;
@@ -54,7 +49,6 @@
     border-radius: 5px;
     padding: 5px 0;
 }
-
 .detail__img--min:hover,
 .detail__img--min.detail__img--min-active {
     border: 1px solid var(--primary-color);
@@ -66,24 +60,20 @@
     font-weight: 800;
     line-height: 3.2rem;
 }
-
 .detail__info--topic {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.4rem;
     padding: 20px 0;
 }
-
 .detail__info--Evaluate {
     display: flex;
     align-items: center;
 }
-
 .detail__info--star {
     width: 26px;
     object-fit: contain;
 }
-
 .detail__info--evaluate-text {
     font-size: 1.4rem;
     font-weight: 400;
@@ -92,7 +82,6 @@
     color: #a4a1aa;
     margin-left: 12px;
 }
-
 .detail__info--price {
     font-size: 2rem;
     font-weight: 400;
@@ -119,35 +108,31 @@
     line-height: 2.2rem;
     margin: 20px 0 8px;
 }
-
 .detail__info--size,
 .detail__info--color {
     display: flex;
 }
-
 .detail__info--color .btn-min {
     width: 36px;
     height: 36px;
     margin-right: 12px;
     box-shadow: unset;
 }
-
 .detail__info--color .btn-min:first-child {
-    background-color: #a6a6a6;
+    background-color: #3C4FB7;
 }
-
 .detail__info--color .btn-min:nth-child(2) {
-    background-color: #d6e5f8;
+    background-color: #008080;
 }
-
 .detail__info--color .btn-min:nth-child(3) {
-    background-color: #d1efe5;
+    background-color: #FF69B4;
 }
-
 .detail__info--color .btn-min:nth-child(4) {
-    background-color: #ffeca6;
+    background-color: #D2B48C;
 }
-
+.detail__info--color .btn-min:nth-child(5) {
+    background-color: #1C1C1C;
+}
 .detail__info--size .btn-min {
     font-size: 1.2rem;
     font-weight: 600;
@@ -157,7 +142,6 @@
     box-shadow: unset;
     background-color: #C0C0C0;
 }
-
 .detail__info--btn-wrap {
     margin-top: 40px;
     display: flex;
@@ -177,15 +161,12 @@
     border-radius: 8px;
     box-shadow: none;
 }
-
 .btn-detail:first-child {
     margin-right: 30px;
 }
-
 .btn-detail:last-child {
     margin-left: 30px;
 }
-
 .btn-detail:last-child:hover {
     cursor: pointer;
     background-color: #000;
@@ -201,25 +182,21 @@
     color: #000;
     cursor: unset;
 }
-
 .btn-selec {
     font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
 }
-
 .detail__info--number {
     display: inline-block;
     margin: 0 20px;
 }
-
 .plus {
     font-size: 2rem;
     line-height: 2.6rem;
     font-weight: 500;
     margin: 0 12px 2px 5px;
 }
-
 .minus {
     transform: rotate(90deg) translateX(10%);
     margin-left: 8px;
@@ -240,7 +217,6 @@
     color: #fff;
     cursor: pointer;
 }
-
 .btn-big-plus:hover {
     background-color: #fff;
     color: #000;
@@ -253,23 +229,19 @@
 .detail__product--title-block {
     margin-bottom: 80px;
 }
-
 .detail__product--title-wrap {
     display: flex;
     width: 100%;
     margin-top: 20px;
     border-bottom: 2px solid #ccc;
 }
-
 .detail__product--title.detail__product--title-active {
     text-shadow: 1px 0px 0px #000;
 }
-
 .detail__product--title-active {
     margin-bottom: -2px;
     border-bottom: 2px solid #000;
 }
-
 .detail__product--title {
     position: relative;
     display: inline-block;
@@ -280,7 +252,6 @@
     padding: 8px 0 16px;
     cursor: pointer;
 }
-
 .detail__product--content-info,
 .detail__product--content-des {
     display: none;
@@ -292,15 +263,14 @@
 }
 
 .detail__product--content-des-block {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 12px 0px;
-    grid-template-areas:
-        ". ."
-        ". .";
+    display: grid; 
+    grid-template-columns: 80px 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 12px 0px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
 }
-
 .detail__product--content-des-title {
     font-weight: 900;
     margin-right: 20px;
@@ -310,23 +280,19 @@
 .detail__product--content-reviews {
     display: block;
 }
-
 .detail__product--content-reviews-title {
     margin: 20px 0;
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.5rem;
 }
-
 .detail__product--content-reviews-item {
     padding: 20px 0px 8px;
     border-bottom: 1px solid #ccc;
 }
-
 .reviews-item-user {
     display: flex;
 }
-
 .reviews-item-user-avata {
     flex-shrink: 0;
     display: block;
@@ -335,45 +301,38 @@
     object-fit: cover;
     border-radius: 50%;
 }
-
 .reviews-item-user-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-around;
     margin-left: 16px;
 }
-
 .reviews-item-user-info-name {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
 }
-
 .reviews-item-user-info-star-wrap {
     display: flex;
     align-items: center;
 }
-
 .reviews-item-user-info-star {
     width: 16px;
     height: 16px;
     object-fit: cover;
 }
-
 .reviews-item-title-cmt {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 2rem;
     margin: 16px 0 12px;
 }
-
 .reviews-item-content {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     margin: 0;
 }
-
 .reviews-item-date {
     font-size: 1.3rem;
     font-weight: 480;
@@ -381,7 +340,6 @@
     margin: 12px 0;
     color: #999;
 }
-
 .reviews-item-date-bold {
     color: #000;
 }
@@ -389,12 +347,10 @@
 .detail__product--your-star-block {
     display: flex;
 }
-
 .detail__product--your-star-wrap {
     margin-right: 24px;
     cursor: pointer;
 }
-
 .detail__product--your-feedback-title {
     display: block;
     font-size: 1.4rem;
@@ -411,7 +367,6 @@
     border-radius: 10px;
     outline: none;
 }
-
 .btn-feedback {
     outline: none;
     border: none;

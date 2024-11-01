@@ -133,19 +133,23 @@
 }
 
 .detail__info--color .btn-min:first-child {
-    background-color: #a6a6a6;
+    background-color: #3c3c3c;
 }
 
 .detail__info--color .btn-min:nth-child(2) {
-    background-color: #d6e5f8;
+    background-color: #b7b7b7;
 }
 
 .detail__info--color .btn-min:nth-child(3) {
-    background-color: #d1efe5;
+    background-color: #576985;
 }
 
 .detail__info--color .btn-min:nth-child(4) {
-    background-color: #ffeca6;
+    background-color: #233a25;
+}
+
+.detail__info--color .btn-min:nth-child(5) {
+    background-color: #9c7490;
 }
 
 .detail__info--size .btn-min {
