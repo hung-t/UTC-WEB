@@ -69,7 +69,3 @@ function autoNext() {
 }
 
 setInterval("autoNext()", 7000);
-
-
-
-
