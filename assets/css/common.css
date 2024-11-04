@@ -89,7 +89,7 @@ label {
     display: block;
     height: 470px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .product:hover .product-img {
