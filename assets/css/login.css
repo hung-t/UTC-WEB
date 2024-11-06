@@ -63,6 +63,7 @@ input[type = checkbox] {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     accent-color: var(--primary-color);
+    margin-bottom: unset;
 }
 
 .form-remember span,

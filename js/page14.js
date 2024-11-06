@@ -3,6 +3,9 @@ const minusAll = document.querySelectorAll(".bx-minus");
 const plusAll = document.querySelectorAll(".bx-plus");
 const trashAll = document.querySelectorAll(".bx-trash");
 const quantities = document.querySelectorAll(".quantity-text");
+const subtotal = document.querySelectorAll(".subtotal");
+const subtotalAll = document.querySelector(".subtotalAll");
+const total = document.querySelector(".total");
 let number = cartItems.length;
 
 minusAll.forEach(function(minus, index) {

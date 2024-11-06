@@ -53,6 +53,8 @@ function searchWork() {
     const clearText = document.querySelector(".header__search--clear-text");
     const trendSearch = document.querySelector(".header__search--trend");
     const userSearch = document.querySelector(".header__search--user");
+    const userSearchWrap = document.querySelector(".header__search--user-wrap");
+    const searchBtn = document.querySelector(".header__search-btn");
     const searchWord = [
         "Iphone 16 Pro Max",
         "IPhone 16 Plus",
@@ -97,25 +99,23 @@ function searchWork() {
         inputSearch.focus();
         userSearch.style.display = "none"; 
         trendSearch.style.display = "block";
+        searchBtn.href = "#!";
     });
 
     inputSearch.addEventListener("input", () => {
-        userSearch.innerHTML = 
-        `<div class="header__search--title-wrap">
-            <h3 class="header__search--title">Search results</h3>
-        </div>`;
+        userSearchWrap.innerHTML = "";
         let isFound = false;
 
         searchWord.forEach(function(word, index) {
             if (inputSearch.value.length !== 0 && word.toLowerCase().startsWith(inputSearch.value.toLowerCase())) {
                 userSearch.style.display = "block";
-                userSearch.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
+                userSearchWrap.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
                 trendSearch.style.display = "none";
                 isFound = true;
             }
             if(word.toLowerCase().includes(inputSearch.value.toLowerCase())) {
                 userSearch.style.display = "block";
-                userSearch.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
+                userSearchWrap.innerHTML += `<a href="../html/product.html" class="header__search--item">${word}</a>`;
                 trendSearch.style.display = "none";
                 isFound = true;
             }
@@ -124,7 +124,9 @@ function searchWork() {
         if (!isFound || inputSearch.value.length === 0 || inputSearch.value === " ") {
             userSearch.style.display = "none"; 
             trendSearch.style.display = "block";
+            searchBtn.href = "#!";
+        } else {
+            searchBtn.href = "../html/product.html";
         }
     });
-
 }
